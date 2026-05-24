@@ -22,7 +22,7 @@ export default function Signup({ onSwitch, onClose }) {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8080/api/auth/register", {
+      const res = await fetch("http://localhost:8083/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: form.name, email: form.email, password: form.password }),
@@ -61,7 +61,7 @@ export default function Signup({ onSwitch, onClose }) {
 
       <form onSubmit={handleSubmit} className="space-y-4">
         {[
-          { key: "name", label: "Full Name", type: "text", placeholder: "Hema Varshini" },
+          { key: "name", label: "Full Name", type: "text", placeholder: "Your Name" },
           { key: "email", label: "Email", type: "email", placeholder: "you@example.com" },
           { key: "password", label: "Password", type: "password", placeholder: "Min 6 characters" },
           { key: "confirm", label: "Confirm Password", type: "password", placeholder: "Repeat password" },
