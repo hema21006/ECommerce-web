@@ -201,7 +201,7 @@ function ShopApp() {
     }
     const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
     try {
-      const res = await fetch("http://localhost:8083/api/payment/create-order", {
+      const res = await fetch("https://ecommerce-backend-mgix.onrender.com/api/payment/create-order", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -218,7 +218,7 @@ function ShopApp() {
         order_id: order.id,
         prefill: { name: user.name, email: user.email },
         handler: async (response) => {
-          await fetch("http://localhost:8083/api/payment/verify", {
+          await fetch("https://ecommerce-backend-mgix.onrender.com/api/payment/verify", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

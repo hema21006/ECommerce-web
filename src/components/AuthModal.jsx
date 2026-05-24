@@ -11,7 +11,7 @@ function Login({ onSwitch, onClose }) {
     e.preventDefault();
     setError(""); setLoading(true);
     try {
-      const res = await fetch("http://localhost:8083/api/auth/login", {
+      const res = await fetch("https://ecommerce-backend-mgix.onrender.com/api/auth/login", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
       });
@@ -65,7 +65,7 @@ function Signup({ onSwitch, onClose }) {
     if (form.password.length < 6) { setError("Password must be at least 6 characters"); return; }
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8083/api/auth/register", {
+      const res = await fetch("https://ecommerce-backend-mgix.onrender.com/api/auth/register", {
         method: "POST", headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: form.name, email: form.email, password: form.password }),
       });

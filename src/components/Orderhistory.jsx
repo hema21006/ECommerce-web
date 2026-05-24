@@ -15,7 +15,7 @@ export default function OrderHistory({ onClose }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8083/api/orders/my-orders", {
+    fetch("https://ecommerce-backend-mgix.onrender.com/api/orders/my-orders", {
       headers: { "Authorization": `Bearer ${getToken()}` }
     })
       .then(r => r.json())

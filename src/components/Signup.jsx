@@ -22,7 +22,7 @@ export default function Signup({ onSwitch, onClose }) {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8083/api/auth/register", {
+      const res = await fetch("https://ecommerce-backend-mgix.onrender.com/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name: form.name, email: form.email, password: form.password }),
