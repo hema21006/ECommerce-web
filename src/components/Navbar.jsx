@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
-import { useWishlist } from "../context/WishlistContext_temp";
+import { useWishlist } from "../context/WishlistContext";
 
 export default function Navbar({ cartCount, onCartClick, onAuthClick, onOrdersClick, onWishlistClick }) {
   const { user, logout } = useAuth();
