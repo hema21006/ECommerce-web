@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AuthProvider, useAuth } from "./context/AuthContext";
-import { WishlistProvider } from "./context/WishlistContext";
+import { WishlistProvider } from "./context/WishlistContext_temp";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Filters from "./components/Filters";

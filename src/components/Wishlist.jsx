@@ -1,4 +1,4 @@
-import { useWishlist } from "../context/WishlistContext";
+import { useWishlist } from "../context/WishlistContext_temp";
 
 export default function Wishlist({ onClose, onAddToCart }) {
   const { wishlist, removeFromWishlist } = useWishlist();
