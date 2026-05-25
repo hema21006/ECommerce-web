@@ -5,11 +5,11 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Filters from "./components/Filters";
 import ProductCard from "./components/ProductCard";
-import ProductDetail from "./components/ProductDetail";
+import ProductDetail from "./components/Productdetail";
 import Cart from "./components/Cart";
 import Toast from "./components/Toast";
 import AuthModal from "./components/AuthModal";
-import OrderHistory from "./components/OrderHistory";
+import OrderHistory from "./components/Orderhistory";
 import Wishlist from "./components/Wishlist";
 
 const DEMO_PRODUCTS = [
